@@ -1,37 +1,117 @@
-aria-band-website/
-
-index.html:
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aria Band</title>
+    <meta name="description" content="Cover Stars - All-Girls Cover Band Specializing in 80s and 90s Songs">
+    <meta name="keywords" content="Cover Stars, Cover Band, All-Girls Band, 80s Music, 90s Music, Live Band, Weddings, Events">
+    <meta name="author" content="Cover Stars">
+    <title>Cover Stars - All-Girls Cover Band</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to Aria Band</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="members.html">Band Members</a></li>
-                <li><a href="schedule.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <div class="logo">
+                <h1>Cover Stars</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="about-us">
-        <h2>About Us</h2>
-        <p>Aria is a classic band bringing the best hits of the 80s, 90s, and today. We perform at weddings, parties, and other special events!</p>
-        <img src="images/band-photo.jpg" alt="Aria Band performing live">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Cover Stars</h1>
+            <p>Bringing the Magic of the 80s and 90s to Your Special Events</p>
+            <a href="#contact" class="button">Contact Cover Stars</a>
+        </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>Who We Are</h2>
+        <p>Founded by a group of talented and passionate musicians, Cover Stars brings together the best of the 80s and 90s in a modern and captivating performance. Our diverse setlist covers everything from rock anthems to pop ballads, ensuring that every song sparks joy and nostalgia.</p>
+        <a href="#contact" class="button">Learn More About Us</a>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <div class="event-item">
+                <h3>Wedding Reception – Smith Wedding</h3>
+                <p>Date: October 21, 2024 | Location: Boston, MA</p>
+            </div>
+            <div class="event-item">
+                <h3>Corporate Gala – Annual Awards Night</h3>
+                <p>Date: November 15, 2024 | Location: New York, NY</p>
+            </div>
+        </div>
+        <a href="#contact" class="button">View All Events</a>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="images/gallery1.jpg" alt="Cover Stars Performance 1">
+            <img src="images/gallery2.jpg" alt="Cover Stars Performance 2">
+            <img src="images/gallery3.jpg" alt="Cover Stars Performance 3">
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="contact">
+        <h2>Book Cover Stars for Your Next Event!</h2>
+        <p>Ready to elevate your event with live music from the best cover band around? Reach out to us to discuss your event details, and let’s make your celebration one to remember!</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="event">Event Type</label>
+            <select id="event" name="event">
+                <option value="wedding">Wedding</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="party">Private Party</option>
+            </select>
+
+            <label for="date">Event Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="message">Message/Details</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Aria Band</p>
+        <div class="footer-content">
+            <p>Follow us on social media for the latest updates!</p>
+            <div class="social-icons">
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">YouTube</a>
+            </div>
+            <p>Contact: info@coverstarsband.com | Phone: (123) 456-7890</p>
+        </div>
     </footer>
 </body>
 </html>
-```
